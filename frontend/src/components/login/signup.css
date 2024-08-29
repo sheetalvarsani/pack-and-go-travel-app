@@ -1,0 +1,150 @@
+/* General styling for the entire body of the document */
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Styling for the container of the sign-up form */
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+/* Heading styles */
+h2,
+h3 {
+  color: #22333b;
+  padding: 20px 0;
+}
+
+/* Styling for the sign-up form */
+.signup-form {
+  width: 400px; /* Set a fixed width for the form */
+  margin: 50px auto; /* Center the form horizontally with top and bottom margins */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0.2, 0.3);
+  text-align: center;
+  background-color: #eae0d5;
+}
+
+.signup-form label {
+  display: block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #5e503f;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #22333b;
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.signup-form input:focus {
+  border-color: #22333b;
+}
+
+/* Styling for the sign-up button */
+.signup-form button.signup-btn {
+  background-color: #5e503f;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to the transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjusted shadow */
+}
+
+.signup-form button.signup-btn:hover {
+  background-color: #22333b;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Error message styles */
+.error-message {
+  color: #d9534f;
+  margin-top: 15px;
+}
+
+/* text styles within form */
+.switch-login-sign-up {
+  color: #5e503f;
+  margin-top: 15px;
+}
+
+/* Home button after Sign Up */
+.signup-navigate-btn {
+  background-color: #5e503f;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to the transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.signup-navigate-btn:hover {
+  background-color: #22333b;
+}
+
+/* Log In Link */
+.signup-container a {
+  color: #22333b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3em;
+  transition: color 0.3s ease; /* Add a transition for color change */
+}
+
+.signup-container a:hover {
+  box-shadow: 0 4px 6px rgba(94, 80, 63, 0.3); /* Add a subtle box shadow on hover */
+}
+
+/* Welcome Message after sign Up */
+.signup-welcome-message {
+  margin: 10% auto;
+  padding: 20px;
+  background-color: #eae0d5; /* Camel color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0.2, 0.3);
+  text-align: center;
+}
+.signup-welcome-message p {
+  color: #22333b; /* Charcoal color */
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Home Button after Sign Up*/
+.go-another-page-btn {
+  background-color: #22333b; /* Dark Khaki color */
+  color: #ffffff; /* White color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.go-another-page-btn:hover {
+  background-color: #5e503f;
+}

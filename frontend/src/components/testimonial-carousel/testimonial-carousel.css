@@ -1,0 +1,137 @@
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .testimonials-container {
+    width: 90%;
+  }
+  .custom-prev-button,
+  .custom-next-button {
+    display: none;
+  }
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #22333b;
+  position: relative;
+  padding: 10px 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Testimonials Text Styles */
+.testimonials-title {
+  position: relative;
+  font-family: "EB Garamond", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 100px;
+  color: #f8f8f8;
+}
+
+/* Testimonials Tagline Styles */
+.testimonials-tagline {
+  font-family: "Raley", sans-serif;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1em;
+  color: #f8f8f8;
+}
+
+/* Testimonials Container Styles */
+.testimonials-container {
+  background-color: #eae0d5;
+  color: #22333b;
+  padding: 0px 20px;
+  width: 70%;
+  margin: 100px auto;
+  margin-bottom: 120px;
+  text-align: center;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 3px 5px rgba(10, 9, 8, 0.1);
+}
+
+/* Testimonial Slide Styles */
+.testimonial-slide {
+  padding: 70px 0;
+  padding-bottom: 50px;
+  text-align: center;
+  width: 60%;
+}
+
+.testimonial-slide h3 {
+  font-family: "EB Garamond", sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  font-weight: 100;
+}
+
+.testimonial-slide p {
+  font-family: "Raley", sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  padding-top: 10px;
+}
+
+/* Custom Button Styles */
+.custom-prev-button,
+.custom-next-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  color: #22333b;
+  font-family: "EB Garamond", sans-serif;
+  cursor: pointer;
+}
+
+/* Custom Prev Button Styles */
+.custom-prev-button {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Custom Next Button Styles */
+.custom-next-button {
+  position: absolute;
+  top: 50%;
+  right: 150px;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+/* Up Arrow Style */
+.up-arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  padding-bottom: 20px;
+  padding-top: 130px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  width: 2%;
+  height: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Back to Top Section Styles */
+.back-to-top {
+  position: relative;
+  font-family: "Raley", sans-serif;
+  text-align: center;
+  font-weight: 100;
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding-top: 0px;
+  color: #f8f8f8;
+}
+
+.back-to-top p{
+  color: #f8f8f8;
+}

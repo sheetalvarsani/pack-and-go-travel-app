@@ -1,0 +1,33 @@
+/* Main footer */
+.footer {
+  background-color: #22333b;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  text-align: center;
+  color: #fff;
+  margin-top: auto;
+}
+
+/* Social media icons section */
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+/* Individual social media icons */
+.social-icon {
+  width: 35px;
+  height: auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Copyright text */
+.copyright p {
+  color: #fff;
+  font-size: 1em;
+  font-family: "EB Garamond", sans-serif;
+  margin-top: 10px;
+}

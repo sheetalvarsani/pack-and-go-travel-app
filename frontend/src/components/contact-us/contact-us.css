@@ -1,0 +1,100 @@
+/* Styles for the main contact container */
+.contact-container {
+  padding: 150px 0;
+}
+
+/* Styles for the contact box */
+.contact-box {
+  width: 40%;
+  margin: auto;
+  padding: 40px 0;
+  padding-bottom: 0;
+  justify-content: center;
+  box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styles for the form */
+.contact-form {
+  padding: 40px 30px;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 767px) {
+  .contact-box {
+    width: 80%;
+  }
+}
+
+/* Styles for error message */
+.contact-form .error-message {
+  color: red;
+  font-size: 0.9em;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styles for paragraphs inside the contact box */
+.contact-box p {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding: 30px 0;
+}
+
+/* Styles for the contact image */
+.contact-image {
+  width: 50%;
+}
+
+/* Styles for labels inside the form */
+.contact-form label {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding: 10px 0;
+}
+
+/* Styles for input fields and text area inside the form */
+.contact-form input,
+.contact-form textarea {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  padding: 15px 0;
+  margin: 10px auto;
+}
+
+/* Styles for the text area inside the form */
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0px 3px 5px rgba(10, 9, 8, 0.1);
+  transition: border 0.3s ease;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  resize: none; /* Disable manual resizing */
+  overflow-y: hidden; /* Hide vertical scrollbar initially */
+  height: 200px; /* Set an initial height, adjust as needed */
+}
+
+/* Styles for submit button */
+.contact-submit-btn {
+  font-family: "Raley", sans-serif;
+  background-color: #5e503f;
+  padding: 12px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #f4f4f4;
+  margin: 40px 0;
+  transition: background-color 0.3s;
+  box-shadow: 0px 3px 5px rgba(10, 9, 8, 0.1);
+}
+
+.contact-submit-btn:hover {
+  background-color: #22333b;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0.5, 0.2);
+}

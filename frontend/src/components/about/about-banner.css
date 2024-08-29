@@ -1,0 +1,146 @@
+/* About Containers */
+.about-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Add this line for left border styling */
+}
+
+/* Row About Styling */
+.row-about {
+  padding: 40px;
+  width: 50%;
+
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* About Row Image Styling */
+.about-row-image {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  flex: 1;
+  width: 50%;
+  border-right: 2px solid rgba(0, 0, 0, 0.1); /* Add this line for left border styling */
+}
+
+/* Responsive Styling for Larger Screens */
+@media (min-width: 768px) {
+  .about-containers {
+    flex-direction: row;
+  }
+
+  .about-row-image,
+  .row-about {
+    width: 50%;
+  }
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 767px) {
+  .about-containers {
+    border-bottom: none;
+  }
+  .about-row-image,
+  .row-about {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+/* About Heading Styles */
+.about-heading {
+  font-size: 35px;
+  padding: 20px;
+  font-family: "EB Garamond", sans-serif;
+  color: #5e503f;
+}
+
+/* About Content Styles */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About Description Styles */
+.about-description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #5e503f;
+}
+
+/* Call to Action Button Styles */
+.cta-btn {
+  background-color: #5e503f;
+  padding: 12px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #f4f4f4;
+  transition: background-color 0.3s;
+  box-shadow: 0px 3px 5px rgba(10, 9, 8, 0.1);
+}
+
+/* About Image Container Styles */
+.about-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* About Image Styles */
+.about-image-container img {
+  width: 80%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+/* Explore Button Styles */
+.explore-btn {
+  font-family: "Raley", sans-serif;
+  background-color: #5e503f;
+  padding: 12px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #f4f4f4;
+  margin-top: 30px;
+  transition: background-color 0.3s;
+  box-shadow: 0px 3px 5px rgba(10, 9, 8, 0.1);
+}
+
+/* Hover Styles for Buttons */
+.explore-btn:hover,
+.cta-btn:hover {
+  background-color: #22333b;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0.5, 0.2);
+}
+
+/* Keyframes Animation for FadeIn Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animated Content Styles */
+.animated-content {
+  animation: fadeIn 1s ease-out;
+  height: 100vh;
+}

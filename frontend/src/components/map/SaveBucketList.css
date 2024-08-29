@@ -1,0 +1,108 @@
+/* Default styles for larger screens */
+.container {
+  position: relative;
+}
+
+.bk-container {
+  position: absolute;
+  bottom: 20px;
+  left: 5px;
+  background-color: #22333b; /* Adjust the alpha channel for transparency */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  padding: 15px;
+  z-index: 999;
+  color: #087391;
+  display: flex;
+  flex-direction: column;
+}
+
+.bk-container h1 {
+  padding: 20px 10px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #f4f4f4;
+  font-family: "EB Garamond", sans-serif;
+}
+
+.bk-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bk-container li {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #fdfdbb;
+  border-radius: 5px;
+  color: #0a0908;
+  margin-bottom: 8px;
+  border: 2px solid #ccc; /* Border style */
+}
+
+.bk-container li:hover {
+  background-color: #087391;
+  color: #f4f4f4;
+}
+
+.bk-container li:last-child {
+  margin-bottom: 0;
+}
+
+.bk-container li::before {
+  content: "🌍";
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #f4f4f4;
+  outline: none;
+}
+
+.close-button:hover {
+  color: #5e503f;
+}
+/* Laptops and desktops - side by side columns */
+@media (min-width: 1025px) {
+}
+/* Media query for tablet screens */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .bk-container {
+    position: fixed;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%; /* Adjust width for tablets */
+    border-radius: 0;
+    background-color: rgba(34, 51, 59, 0.7);
+  }
+
+  .bk-container li::before {
+    font-size: 18px; /* Adjust the font size for tablets */
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .bk-container {
+    position: fixed; /* Change position to fixed */
+    bottom: 70px;
+    left: 50%; /* Center the container horizontally */
+    transform: translateX(-50%); /* Adjust to center */
+    width: 50%;
+    border-radius: 0;
+    background-color: rgba(34, 51, 59, 0.7);
+  }
+
+  .bk-container li::before {
+    font-size: 16px; /* Adjust the font size for small screens */
+  }
+}

@@ -1,0 +1,76 @@
+/* pack-list.css */
+
+/* Center the container */
+.pack-list-container {
+  border: none; /* Set border to none to hide the container border */
+  background-color: transparent; /* Set background color to transparent */
+  justify-content: center;
+  align-items: center; /* Align items in the center */
+  outline: none; /* Remove default outline on focus */
+}
+
+/* Hide the borders of the custom-width-container class */
+.custom-width-container {
+  border: none; /* Set border to none to hide the container border */
+  background-color: transparent; /* Set background color to transparent */
+  width: 300px; /* Adjust as needed */
+}
+
+
+/* Disable user selection on accordion cards */
+.accordion-button {
+  user-select: none;
+}
+
+/* Additional styles for .pack-list */
+.pack-list {
+  text-align: center;
+  color: #5e503f; /* Set text color for .pack-list */
+}
+
+.pack-list ul {
+  list-style-position: inside;
+  text-align: center;
+  padding-left: 0;
+}
+
+h1, h2 {
+  font-size: 1.5rem;
+  line-height: 1.5; 
+  margin-bottom: 30px;
+  text-align: center;
+  color: #5e503f; /* Set text color for h1 and h2 */
+}
+
+p, li, ul {
+  font-size: 1rem;
+  color: #5e503f; /* Set text color for p, li, ul */
+}
+
+/* Button styles */
+.button {
+  background-color: #5e503f;
+  padding: 12px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #f4f4f4;
+  transition: background-color 0.3s; /* Added box-shadow transition */
+  box-shadow: 0px 3px 5px rgba(10, 9, 8, 0.1); /* Added box shadow */
+}
+
+.button:hover {
+  background-color: #423634; /* Change color on hover */
+}
+
+/* Adjusted focus styles for accordion button */
+.accordion-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 0.25rem #C6AC8F; /* Set your desired shadow color */
+}
+
+.tell-us-text {
+  color: #5e3f5e; /* Set the desired text color */
+}

@@ -1,0 +1,37 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Kanit:ital,wght@1,300&family=Lobster+Two&family=Open+Sans&family=Playpen+Sans:wght@300&display=swap');
+
+/* Map container styles */
+.map-container {
+  max-width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0.5, 0.);
+}
+
+/* Country Details styles */
+.country-details {
+  padding: 20px 0;
+  margin: 50px auto;
+}
+
+/* Map styles */
+.map-frame {
+  width: 100%;
+  height: 250px;
+  border: none;
+}
+
+.view-larger-map {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #4285f4;
+}
+
+.view-larger-map:hover {
+  text-decoration: underline;
+}
+

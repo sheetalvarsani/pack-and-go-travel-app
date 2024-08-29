@@ -1,0 +1,20 @@
+{
+    "name": "the-last-project-cfg",
+    "version": "1.0.0",
+    "description": "Code first girl project",
+    "main": "index.js",
+    "scripts": {
+        "start:frontend": "cd frontend && npm start",
+        "start:backend": "cd backend && node index.js",
+        "install:database": "cd backend && npx prisma migrate dev",
+        "create:env": "cd backend && cp .env.example .env",
+        "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+        "install": "concurrently \"cd frontend && npm install\" \"cd backend && npm install\""
+    },
+    "keywords": [],
+    "author": "Moira",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^6.2.1"
+    }
+}

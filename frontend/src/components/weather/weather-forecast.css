@@ -1,0 +1,70 @@
+/* Title Section */
+.title {
+  font-size: 23px;
+  font-weight: 700;
+  padding: 0px 20px 50px 0px;
+}
+
+/* Daily Item Styles */
+.day-item {
+  background-color: lightgrey;
+  border-radius: 15px;
+  height: 30px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  padding: 32px 20px;
+}
+
+/* Small Weather Icon Styles */
+.icon-small {
+  width: 40px;
+}
+
+/* Day Label Styles */
+.day {
+  color: #212121;
+  flex: 1 1;
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+/* Description Label Styles */
+.description {
+  flex: 1 1;
+  margin-right: 15px;
+  text-align: right;
+}
+
+/* Temperature Label Styles */
+.temp {
+  color: black;
+}
+
+/* Daily Details Grid Item Styles */
+.day-expansion {
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+  align-items: center;
+  color: grey
+}
+
+/*Expansion Button Styling*/
+.accordion__button:after {
+  display: inline-block;
+  content: '';
+  height: 10px;
+  width: 10px;
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+  margin-left: 300px;
+}
+
+/*Collapsed Button Styling*/
+.accordion__button[aria-expanded='true']:after {
+  transform: rotate(225deg)
+}
+

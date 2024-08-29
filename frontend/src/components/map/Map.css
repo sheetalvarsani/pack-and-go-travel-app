@@ -1,0 +1,217 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Raleway&display=swap");
+
+/* Global styles for the body */
+body {
+  font-family: " Raleway", sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Main container styles */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px #0A0908(0, 0, 0, 0.1);
+  min-height: 70vh;
+}
+
+/* Search container styles */
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 6px rgba(94, 80, 63, 0.2);
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+/* Search input styles */
+input {
+  width: calc(100%);
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: 0 4px 6px rgba(94, 80, 63, 0.2);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  margin-bottom: -1px;
+}
+
+/* Remove the border when the input is focused */
+input:focus {
+  outline: none;
+  box-shadow: none;
+}
+input::placeholder {
+  color: #22333b;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Suggestions container styles */
+.suggestions {
+  top: 60px; /* Adjust the distance from the input */
+  width: 100%;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 5px #0A0908(0, 0, 0, 0.1);
+  z-index: 999; /* Adjust the value based on your layout */
+  color: #22333b;
+}
+
+/* Styles for individual suggestions */
+.suggestions div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.suggestions div:hover {
+  background-color: #eae0d5;
+}
+
+/* Country details container styles */
+.country-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  max-width: 70%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 5px rgb(94, 80, 63);
+  background-color: #f0f0f0;
+  color: #22333b;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Country info styles */
+.country-info {
+  max-width: 100%;
+  padding: 10px;
+  margin: 0 5px 30px;
+  font-size: 20px;
+}
+
+/* Button styles in country info */
+.country-info button {
+  background-color: #5e503f;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.country-info button:hover {
+  background-color: #22333b;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0.5, 0.2); /* Increase shadow on hover */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .search-container {
+    width: 75%;
+  }
+
+  .country-details {
+    flex-direction: column;
+    align-items: center;
+    bottom: 10px;
+  }
+
+  .map-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+
+  .map-frame {
+    width: 100%;
+    height: 0;
+    padding-top: 75%;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .map-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .country-info {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 20px;
+  }
+}
+
+/* Tablet view responsive styles*/
+@media (min-width: 601px) and (max-width: 1024px) {
+  .main-container {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .search-container {
+    width: 48%;
+  }
+
+  .country-details {
+    flex-direction: column;
+    width: 45%;
+  }
+
+  .map-container {
+    width: 100%;
+    margin: 0 auto 30px;
+    overflow: hidden;
+  }
+
+  .map-frame {
+    width: 100%; /* Make the iframe fill the container */
+    height: 100%;
+  }
+
+  .country-info {
+    width: 100%;
+  }
+}
+
+/* Laptops and desktops view responsive styles - side by side columns */
+@media (min-width: 1024px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .map-container {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  .map-frame {
+    width: 100%; /* Make the iframe fill the container */
+    height: 100%; /* Make the iframe full height */
+  }
+
+  .country-info {
+    width: 40%;
+  }
+}

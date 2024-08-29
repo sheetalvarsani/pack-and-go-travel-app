@@ -1,0 +1,79 @@
+/* About Us Container */
+.about-us-container {
+  width: 100%;
+  padding: 80px 0;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #f8f8f8;
+  position: relative;
+}
+
+/* About Us Intro */
+.about-us-intro {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  font-family: "EB Garamond", sans-serif;
+  color: #22333b;
+  position: relative;
+}
+
+/* About Us Profiles */
+.about-us-profiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow profiles to wrap onto a new line on smaller screens */
+  opacity: 1; /* Set opacity to 1 to ensure content is always visible */
+}
+
+/* Profile Card Styles */
+.profile-card {
+  background-color: #eae0d5;
+  width: 14%;
+  margin: 0 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 5px rgba(10, 9, 8, 0.1);
+}
+
+/* Responsive Styling for Smaller Screens */
+@media screen and (max-width: 1024px) {
+  .profile-card {
+    width: 80% !important; /* One profile per row on smaller screens */
+  }
+  .about-us-container {
+    padding-top: 80px;
+  }
+}
+
+/* Profile Header Styles */
+.profile-card h2 {
+  color: #22333b;
+  font-size: 1.6em;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+/* Profile Paragraph Styles */
+.profile-card p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Profile List Item Styles */
+.profile-card li {
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+/* Profile Unordered List Styles */
+.profile-card ul {
+  margin-top: 10px;
+  list-style: inside;
+  padding-left: 0px; /* Adjust the padding to reduce the gap */
+}

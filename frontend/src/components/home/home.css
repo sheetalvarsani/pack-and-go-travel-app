@@ -1,0 +1,153 @@
+/* Main Container Styles */
+.containers {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+}
+
+.row-title,
+.row-image,
+.row-section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .containers {
+    flex-direction: row;
+  }
+
+  .row-title,
+  .row-image,
+  .row-section {
+    width: 30%; 
+  }
+}
+
+/* Title Row Styles */
+.row-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  flex: 1;
+}
+
+/* Image Row Styles */
+.row-image {
+  display: flex;
+  background: #ddd;
+  flex: 1;
+}
+
+.row-section {
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the content vertically */
+}
+
+/* Section Styles */
+.section-heading {
+  font-size: 35px;
+  padding: 20px;
+  font-family: "EB Garamond", sans-serif;
+  color: #5e503f;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-description {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #5e503f;
+}
+
+/* Image Container Styles */
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s; /* Add a smooth transition effect */
+}
+
+/* Home Page Title Styles */
+.title-home-page {
+  font-size: 35px;
+  padding: 20px;
+  font-family: "EB Garamond", sans-serif;
+  color: #5e503f;
+}
+
+/* Subtitle Styles */
+.subtitle {
+  font-size: 23px;
+  margin-bottom: 40px;
+  color: #5e503f;
+}
+
+/* Call to Action Button Styles */
+.cta-btn {
+  background-color: #5e503f;
+  padding: 12px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #f4f4f4;
+  transition: background-color 0.3s; /* Added box-shadow transition */
+  box-shadow: 0px 3px 5px rgba(10, 9, 8, 0.1); /* Added box shadow */
+}
+
+/* Explore Button Styles */
+.explore-btn {
+  font-family: "Raley", sans-serif;
+  background-color: #5e503f;
+  padding: 12px 10px;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #f4f4f4;
+  margin-top: 30px;
+  transition: background-color 0.3s; /* Added box-shadow transition */
+  box-shadow: 0px 3px 5px rgba(10, 9, 8, 0.1); /* Added box shadow */
+}
+
+.explore-btn:hover,
+.cta-btn:hover {
+  background-color: #22333b;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0.5, 0.2); /* Increase shadow on hover */
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animated-content {
+  animation: fadeIn 1s ease-out;
+  height: 100vh;
+}
